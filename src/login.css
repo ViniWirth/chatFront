@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+  }
+  
+  .login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    justify-items: center;
+  }
+  
+  .login-container img {
+    margin-bottom: 20px;
+    max-width: 70%;
+  }
+  
+  .login-container input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #2F80ED;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container button:hover {
+    background-color: #1C60B3;
+  }
+  
+  /* Centralizar mensagens de carregamento */
+.login-container p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Lista de salas */
+.chat-list {
+    padding: 20px;
+    list-style: none;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chat-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+
+.chat-list li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+}
+
+.chat-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat-details {
+    flex-grow: 1;
+    
+}
+
+.chat-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2F80ED;
+}
+
+.chat-details p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+

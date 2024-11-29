@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: "black";
+  }
+  
+  /* Estilo geral da página */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-header .room-name {
+    flex: 4;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .chat-header .active-users {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    border-radius: 0 15px 15px 0;
+    padding: 12px;
+  }
+  
+  .chat-header .active-users .indicator {
+    width: 10px;
+    height: 10px;
+    background: #48ff00;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  /* Mensagens */
+  /* Container das mensagens */
+.chat-messages {
+    max-height: 400px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Permite o scroll vertical */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Estilo das mensagens */
+  .chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+  }
+  
+  /* Estilo das mensagens enviadas pelo usuário */
+  .chat-message.user {
+    background-color: black;
+    text-align: right;
+  }
+  
+  /* Estilo das mensagens de outros usuários */
+  .chat-message.other {
+    background-color: black;
+  }
+  
+  /* Data e hora das mensagens */
+  .timestamp {
+    font-size: 0.8rem;
+    color: black;
+  }
+  
+  
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-message.user {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    align-self: flex-end;
+  }
+  
+  .chat-message.other {
+    background: rgba(255, 255, 255, 0.7);
+    align-self: flex-start;
+  }
+  
+  .chat-message .sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .chat-message .timestamp {
+    font-size: 0.8rem;
+    color: black;
+    text-align: right;
+  }
+  
+  /* Input de mensagens */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .chat-input input {
+    flex: 4;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  .chat-input input::placeholder {
+    color: black;
+  }
+  
+  .chat-input button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
